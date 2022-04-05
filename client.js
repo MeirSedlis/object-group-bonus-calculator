@@ -41,7 +41,8 @@ const employees = [
 
 console.log( employees );
 function bonusCalculator(employee){
-let calculatedBonus = {
+let calculatedBonus = {     
+  name: employee.name,
 };
 //make empty object
 // INPUT an employee from employees 
@@ -78,6 +79,10 @@ if (calculatedBonus.bonusPercentage > 0.13) {
 }
 // No bonus can be above 13%
 // No bonus can be below 0%
+
+calculatedBonus.totalCompensation = Number(employee.annualSalary) + Number(employee.annualSalary) * calculatedBonus.bonusPercentage
+calculatedBonus.totalBonus = Math.round(calculatedBonus.totalCompensation)
+
 
 return calculatedBonus; 
 
