@@ -39,6 +39,20 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
+
+$(document).ready(readyNow);
+
+
+function readyNow(){
+  $('#brad').on('click', showMeTheMoney);
+}
+
+function showMeTheMoney(){
+  for(let employee of employees) {
+  $('#emps').append(`<li>${bonusCalculator(employee).name} will have an estimated total compensation of $${bonusCalculator(employee).totalBonus}.00</li>`);
+  }
+}
+
 console.log(employees);
 function bonusCalculator(employee) {
   let calculatedBonus = {
