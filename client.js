@@ -67,7 +67,9 @@ if (employee.employeeNumber.length === 4) {
   calculatedBonus.bonusPercentage += 0.05;
 }
 // IF employeeNumber is 4 digits, then get get an additional 5%
-
+if (employee.annualSalary > 65000) {
+  calculatedBonus.bonusPercentage -= 0.01;
+}
 // IF annualSalary is greater than 65k bonus should be adjusted down 1%
 
 // No bonus can be above 13%
