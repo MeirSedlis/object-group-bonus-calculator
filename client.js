@@ -63,7 +63,9 @@ else if (employee.reviewRating === 5){
 // ELSE IF the employee.rating is 5 bonus is 10% of annual salary
 
 // END EMPLOYEE RATING IF
-
+if (employee.employeeNumber.length === 4) {
+  calculatedBonus.bonusPercentage += 0.05;
+}
 // IF employeeNumber is 4 digits, then get get an additional 5%
 
 // IF annualSalary is greater than 65k bonus should be adjusted down 1%
