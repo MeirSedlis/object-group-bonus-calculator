@@ -71,7 +71,11 @@ if (employee.annualSalary > 65000) {
   calculatedBonus.bonusPercentage -= 0.01;
 }
 // IF annualSalary is greater than 65k bonus should be adjusted down 1%
-
+if (calculatedBonus.bonusPercentage > 0.13) {
+  calculatedBonus.bonusPercentage = 0.13;
+} else if (calculatedBonus.bonusPercentage < 0) {
+  calculatedBonus.bonusPercentage = 0;
+}
 // No bonus can be above 13%
 // No bonus can be below 0%
 
@@ -81,4 +85,8 @@ return calculatedBonus;
 // total compensation of base + bonus. total bonus will be total 
 // compensation rounded to the nearest dollar (maybe appended to the DOM)
  
+}
+
+for (let employee of employees) {
+  console.log(bonusCalculator(employee));
 }
