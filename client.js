@@ -40,3 +40,26 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
+
+// INPUT an employee from employees
+
+// IF the employee.rating is equal or less than 2 no bonus
+
+// ELSE IF the employee.rating is 3 bonus is 4% of annual salary
+
+// ELSE IF the employee.rating is 4 bonus is 6% of annual salary
+
+// ELSE IF the employee.rating is 5 bonus is 10% of annual salary
+
+// END EMPLOYEE RATING IF
+
+// IF employeeNumber is 4 digits, then get get an additional 5%
+
+// IF annualSalary is greater than 65k bonus should be adjusted down 1%
+
+// No bonus can be above 13%
+// No bonus can be below 0%
+
+// OUTPUT a new object with employee name ,bonus percentage, 
+// total compensation of base + bonus. total bonus will be total 
+// compensation rounded to the nearest dollar (maybe appended to the DOM)
